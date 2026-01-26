@@ -14,8 +14,10 @@
                 .kpi-value { font-size: 28px; font-weight: bold; color: #1f77b4; margin: 10px 0; }
                 .variation-pos { color: #27ae60; font-weight: bold; }
                 .variation-neg { color: #c0392b; font-weight: bold; }
-                table { width: 100%; border-collapse: collapse; margin-top: 30px; }
-                th, td { padding: 12px; border: 1px solid #eee; text-align: left; }
+                .btn-export { background-color: #27ae60; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+                .btn-export:hover { background-color: #219150; }
+                table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+                th, td { padding: 12px; border: 1px solid #eee; text-align: left; font-size: 14px; }
                 th { background: #f8f9fa; }
                 h1 { color: #2c3e50; text-align: center; }
             </style>
@@ -45,169 +47,197 @@
                     <div class="kpi-card">
                         <div class="kpi-title">Tasa y Plazo</div>
                         <div class="kpi-value">5.77%</div>
-                        <div style="font-size: 14px; color: #666;">Promedio: 9408 días</div>
+                        <div style="font-size: 14px; color: #666;">Plazo Promedio: 25.78 años</div>
                     </div>
                 </div>
 
                 <div class="graph-container"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.1.min.js" integrity="sha256-4rD3fugVb/nVJYUv5Ky3v+fYXoouHaBSP20WIJuEiWg=" crossorigin="anonymous"></script>                <div id="82d13793-1178-427e-8f69-4f4b2dc6190a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("82d13793-1178-427e-8f69-4f4b2dc6190a")) {                    Plotly.newPlot(                        "82d13793-1178-427e-8f69-4f4b2dc6190a",                        [{"fill":"tozeroy","hovertemplate":"\u003cb\u003eFecha:\u003c\u002fb\u003e %{x|%d\u002f%m\u002f%Y}\u003cbr\u003e\u003cb\u003eUVAs:\u003c\u002fb\u003e %{y:,.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#1f77b4","width":3},"name":"Monto en UVAs","x":["2016-01-01T00:00:00","2016-02-01T00:00:00","2016-03-01T00:00:00","2016-04-01T00:00:00","2016-05-01T00:00:00","2016-06-01T00:00:00","2016-07-01T00:00:00","2016-08-01T00:00:00","2016-09-01T00:00:00","2016-10-01T00:00:00","2016-11-01T00:00:00","2016-12-01T00:00:00","2017-01-01T00:00:00","2017-02-01T00:00:00","2017-03-01T00:00:00","2017-04-01T00:00:00","2017-05-01T00:00:00","2017-06-01T00:00:00","2017-07-01T00:00:00","2017-08-01T00:00:00","2017-09-01T00:00:00","2017-10-01T00:00:00","2017-11-01T00:00:00","2017-12-01T00:00:00","2018-01-01T00:00:00","2018-02-01T00:00:00","2018-03-01T00:00:00","2018-04-01T00:00:00","2018-05-01T00:00:00","2018-06-01T00:00:00","2018-07-01T00:00:00","2018-08-01T00:00:00","2018-09-01T00:00:00","2018-10-01T00:00:00","2018-11-01T00:00:00","2018-12-01T00:00:00","2019-01-01T00:00:00","2019-02-01T00:00:00","2019-03-01T00:00:00","2019-04-01T00:00:00","2019-05-01T00:00:00","2019-06-01T00:00:00","2019-07-01T00:00:00","2019-08-01T00:00:00","2019-09-01T00:00:00","2019-10-01T00:00:00","2019-11-01T00:00:00","2019-12-01T00:00:00","2020-01-01T00:00:00","2020-02-01T00:00:00","2020-03-01T00:00:00","2020-04-01T00:00:00","2020-05-01T00:00:00","2020-06-01T00:00:00","2020-07-01T00:00:00","2020-08-01T00:00:00","2020-09-01T00:00:00","2020-10-01T00:00:00","2020-11-01T00:00:00","2020-12-01T00:00:00","2021-01-01T00:00:00","2021-02-01T00:00:00","2021-03-01T00:00:00","2021-04-01T00:00:00","2021-05-01T00:00:00","2021-06-01T00:00:00","2021-07-01T00:00:00","2021-08-01T00:00:00","2021-09-01T00:00:00","2021-10-01T00:00:00","2021-11-01T00:00:00","2021-12-01T00:00:00","2022-01-01T00:00:00","2022-02-01T00:00:00","2022-03-01T00:00:00","2022-04-01T00:00:00","2022-05-01T00:00:00","2022-06-01T00:00:00","2022-07-01T00:00:00","2022-08-01T00:00:00","2022-09-01T00:00:00","2022-10-01T00:00:00","2022-11-01T00:00:00","2022-12-01T00:00:00","2023-01-01T00:00:00","2023-02-01T00:00:00","2023-03-01T00:00:00","2023-04-01T00:00:00","2023-05-01T00:00:00","2023-06-01T00:00:00","2023-07-01T00:00:00","2023-08-01T00:00:00","2023-09-01T00:00:00","2023-10-01T00:00:00","2023-11-01T00:00:00","2023-12-01T00:00:00","2024-01-01T00:00:00","2024-02-01T00:00:00","2024-03-01T00:00:00","2024-04-01T00:00:00","2024-05-01T00:00:00","2024-06-01T00:00:00","2024-07-01T00:00:00","2024-08-01T00:00:00","2024-09-01T00:00:00","2024-10-01T00:00:00","2024-11-01T00:00:00","2024-12-01T00:00:00","2025-01-01T00:00:00","2025-02-01T00:00:00","2025-03-01T00:00:00","2025-04-01T00:00:00","2025-05-01T00:00:00","2025-06-01T00:00:00","2025-07-01T00:00:00","2025-08-01T00:00:00","2025-09-01T00:00:00","2025-10-01T00:00:00","2025-11-01T00:00:00","2025-12-01T00:00:00"],"y":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChfFRnnrlhQPCaRDnqeI1ACRvJARfAoUB4fOdqiry+QMef6B\u002f9QsxAntHj+TxB10CoGRPxLyHbQPmiZm9ubedAnKinzR2V4EC66KKLTrDkQGAwMUHNaO9Aa498eubP8EClUgSX5ZD1QEyVys8c1QBB9enKMaoaCUGaaetsVtwSQadtnBI7ahZBLEDjHwwKGUEaUjSsIRwbQQyuZprQ3SBBxMadHGElG0Hjqf34rjkaQTnlXAdU9CJBgILoBJmeIUGTVwvyzpYbQRF78khRSQxB1FAQgHF1CEFelVn7DI4IQdJ4Xug3wf9Avrd+uDnO\u002fEDhbLxdewz5QEYJNoWChvVA8oOK+CVh8kDqka19fMvvQPOJ\u002fEM2Y+9Acl+9xJgJ8UB9fO3Mb7rxQNiApJSRi+dA0vCc09Rl5UAfIzc60hXpQIW0CIctjOtAEFYoNS0+5kBxXlCTE5jjQOmpDElRzd9A488zFYYoz0BP0bqGdCTIQKu16DrTfbxAktUqQ8JqkUA3e6vs3yutQPv3rz64l7JA2AY6\u002f3OBqUCQN\u002fOSAIeoQOSJwCYjv7NATzWFiISrsUAKMLud2O6zQE000UQTULBACt9VC9\u002fKrUAVD\u002f7fkmCeQKzhsVMfvslAyLudaeRKzkA12tIfUqnAQN6kjOAeLMBAZypeaSPrsUBIuCgzAMavQG5NUJP95rJAykXqJvvYqkCmtVWLg5WyQFXZtwgjXrNANItg8A2AsEDhNnXWOqmuQJHnxQnkYJ5ApIHlSI9Ok0Dzfyn4wWKiQOKYny2N0MVACZTzIudnrUCsNgVx+m64QGClTaxAFLpAYVUHUJevwEBqq+JvoqLFQLKaDrZohcRAncuBzQ0tx0CvSSFoY4nBQNvjoHhM9chAcQLjFOqsx0B2rldTRkbKQNVdRuflidFAlUnJ\u002fqhJ0EAnyWiADtzTQEGh3Pa17NhAz7WVy9P25kCHYM8LKP3kQPQp\u002fReViaxAtDlMBEIFsUCunUctTv6nQEQn125i8Z5AxrKpLQRRpEDHwMZpP7qsQOdBpMlmZLpAFOsO\u002fYH700CB\u002flTj6KrtQFPpiQ\u002fogfpA8+ft\u002fMD7BEFUCAtwpnEDQfzCygj1kglB8hlJt2WAA0FIzdXp+tUFQcWUQxaB0wdBtlXfNvQiDkHbJZElcygNQT47EJSaLgxBFqJTbkYXEEHp38JuKxwQQS0OpfwCCBNBJuWpyr8pFEG6NFQ0T14DQRvme\u002f030wdB"},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"text":"\u003cb\u003eEvolución de Operaciones en UVAs\u003c\u002fb\u003e\u003cbr\u003e\u003csup\u003eCierre al 01\u002f12\u002f2025\u003c\u002fsup\u003e"},"hovermode":"x unified","xaxis":{"title":{"text":"Fecha"}},"yaxis":{"title":{"text":"Cantidad de UVAs"}}},                        {"responsive": true}                    )                };            </script>        </div></div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.1.min.js" integrity="sha256-4rD3fugVb/nVJYUv5Ky3v+fYXoouHaBSP20WIJuEiWg=" crossorigin="anonymous"></script>                <div id="3d4c0b0d-2508-4e88-9188-581d97486938" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3d4c0b0d-2508-4e88-9188-581d97486938")) {                    Plotly.newPlot(                        "3d4c0b0d-2508-4e88-9188-581d97486938",                        [{"fill":"tozeroy","hovertemplate":"\u003cb\u003eFecha:\u003c\u002fb\u003e %{x|%d\u002f%m\u002f%Y}\u003cbr\u003e\u003cb\u003eUVAs:\u003c\u002fb\u003e %{y:,.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#1f77b4","width":3},"name":"Monto en UVAs","x":["2016-01-01T00:00:00","2016-02-01T00:00:00","2016-03-01T00:00:00","2016-04-01T00:00:00","2016-05-01T00:00:00","2016-06-01T00:00:00","2016-07-01T00:00:00","2016-08-01T00:00:00","2016-09-01T00:00:00","2016-10-01T00:00:00","2016-11-01T00:00:00","2016-12-01T00:00:00","2017-01-01T00:00:00","2017-02-01T00:00:00","2017-03-01T00:00:00","2017-04-01T00:00:00","2017-05-01T00:00:00","2017-06-01T00:00:00","2017-07-01T00:00:00","2017-08-01T00:00:00","2017-09-01T00:00:00","2017-10-01T00:00:00","2017-11-01T00:00:00","2017-12-01T00:00:00","2018-01-01T00:00:00","2018-02-01T00:00:00","2018-03-01T00:00:00","2018-04-01T00:00:00","2018-05-01T00:00:00","2018-06-01T00:00:00","2018-07-01T00:00:00","2018-08-01T00:00:00","2018-09-01T00:00:00","2018-10-01T00:00:00","2018-11-01T00:00:00","2018-12-01T00:00:00","2019-01-01T00:00:00","2019-02-01T00:00:00","2019-03-01T00:00:00","2019-04-01T00:00:00","2019-05-01T00:00:00","2019-06-01T00:00:00","2019-07-01T00:00:00","2019-08-01T00:00:00","2019-09-01T00:00:00","2019-10-01T00:00:00","2019-11-01T00:00:00","2019-12-01T00:00:00","2020-01-01T00:00:00","2020-02-01T00:00:00","2020-03-01T00:00:00","2020-04-01T00:00:00","2020-05-01T00:00:00","2020-06-01T00:00:00","2020-07-01T00:00:00","2020-08-01T00:00:00","2020-09-01T00:00:00","2020-10-01T00:00:00","2020-11-01T00:00:00","2020-12-01T00:00:00","2021-01-01T00:00:00","2021-02-01T00:00:00","2021-03-01T00:00:00","2021-04-01T00:00:00","2021-05-01T00:00:00","2021-06-01T00:00:00","2021-07-01T00:00:00","2021-08-01T00:00:00","2021-09-01T00:00:00","2021-10-01T00:00:00","2021-11-01T00:00:00","2021-12-01T00:00:00","2022-01-01T00:00:00","2022-02-01T00:00:00","2022-03-01T00:00:00","2022-04-01T00:00:00","2022-05-01T00:00:00","2022-06-01T00:00:00","2022-07-01T00:00:00","2022-08-01T00:00:00","2022-09-01T00:00:00","2022-10-01T00:00:00","2022-11-01T00:00:00","2022-12-01T00:00:00","2023-01-01T00:00:00","2023-02-01T00:00:00","2023-03-01T00:00:00","2023-04-01T00:00:00","2023-05-01T00:00:00","2023-06-01T00:00:00","2023-07-01T00:00:00","2023-08-01T00:00:00","2023-09-01T00:00:00","2023-10-01T00:00:00","2023-11-01T00:00:00","2023-12-01T00:00:00","2024-01-01T00:00:00","2024-02-01T00:00:00","2024-03-01T00:00:00","2024-04-01T00:00:00","2024-05-01T00:00:00","2024-06-01T00:00:00","2024-07-01T00:00:00","2024-08-01T00:00:00","2024-09-01T00:00:00","2024-10-01T00:00:00","2024-11-01T00:00:00","2024-12-01T00:00:00","2025-01-01T00:00:00","2025-02-01T00:00:00","2025-03-01T00:00:00","2025-04-01T00:00:00","2025-05-01T00:00:00","2025-06-01T00:00:00","2025-07-01T00:00:00","2025-08-01T00:00:00","2025-09-01T00:00:00","2025-10-01T00:00:00","2025-11-01T00:00:00","2025-12-01T00:00:00"],"y":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChfFRnnrlhQPCaRDnqeI1ACRvJARfAoUB4fOdqiry+QMef6B\u002f9QsxAntHj+TxB10CoGRPxLyHbQPmiZm9ubedAnKinzR2V4EC66KKLTrDkQGAwMUHNaO9Aa498eubP8EClUgSX5ZD1QEyVys8c1QBB9enKMaoaCUGaaetsVtwSQadtnBI7ahZBLEDjHwwKGUEaUjSsIRwbQQyuZprQ3SBBxMadHGElG0Hjqf34rjkaQTnlXAdU9CJBgILoBJmeIUGTVwvyzpYbQRF78khRSQxB1FAQgHF1CEFelVn7DI4IQdJ4Xug3wf9Avrd+uDnO\u002fEDhbLxdewz5QEYJNoWChvVA8oOK+CVh8kDqka19fMvvQPOJ\u002fEM2Y+9Acl+9xJgJ8UB9fO3Mb7rxQNiApJSRi+dA0vCc09Rl5UAfIzc60hXpQIW0CIctjOtAEFYoNS0+5kBxXlCTE5jjQOmpDElRzd9A488zFYYoz0BP0bqGdCTIQKu16DrTfbxAktUqQ8JqkUA3e6vs3yutQPv3rz64l7JA2AY6\u002f3OBqUCQN\u002fOSAIeoQOSJwCYjv7NATzWFiISrsUAKMLud2O6zQE000UQTULBACt9VC9\u002fKrUAVD\u002f7fkmCeQKzhsVMfvslAyLudaeRKzkA12tIfUqnAQN6kjOAeLMBAZypeaSPrsUBIuCgzAMavQG5NUJP95rJAykXqJvvYqkCmtVWLg5WyQFXZtwgjXrNANItg8A2AsEDhNnXWOqmuQJHnxQnkYJ5ApIHlSI9Ok0Dzfyn4wWKiQOKYny2N0MVACZTzIudnrUCsNgVx+m64QGClTaxAFLpAYVUHUJevwEBqq+JvoqLFQLKaDrZohcRAncuBzQ0tx0CvSSFoY4nBQNvjoHhM9chAcQLjFOqsx0B2rldTRkbKQNVdRuflidFAlUnJ\u002fqhJ0EAnyWiADtzTQEGh3Pa17NhAz7WVy9P25kCHYM8LKP3kQPQp\u002fReViaxAtDlMBEIFsUCunUctTv6nQEQn125i8Z5AxrKpLQRRpEDHwMZpP7qsQOdBpMlmZLpAFOsO\u002fYH700CB\u002flTj6KrtQFPpiQ\u002fogfpA8+ft\u002fMD7BEFUCAtwpnEDQfzCygj1kglB8hlJt2WAA0FIzdXp+tUFQcWUQxaB0wdBtlXfNvQiDkHbJZElcygNQT47EJSaLgxBFqJTbkYXEEHp38JuKxwQQS0OpfwCCBNBJuWpyr8pFEG6NFQ0T14DQRvme\u002f030wdB"},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"text":"\u003cb\u003eEvolución de Operaciones en UVAs\u003c\u002fb\u003e\u003cbr\u003e\u003csup\u003eCierre al 01\u002f12\u002f2025\u003c\u002fsup\u003e"},"hovermode":"x unified","xaxis":{"title":{"text":"Fecha"}},"yaxis":{"title":{"text":"Cantidad de UVAs"}}},                        {"responsive": true}                    )                };            </script>        </div></div>
 
-                <h2>Historial Reciente (Últimos 20 meses)</h2>
-                <table>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">Historial Reciente (Orden Cronológico)</h2>
+                    <button class="btn-export" onclick="exportTableToCSV('datos_uva_01_12_2025.csv')">📥 Descargar Excel (CSV)</button>
+                </div>
+
+                <table id="tabla-datos">
                     <thead>
                         <tr>
                             <th>Fecha</th>
                             <th>Monto ($)</th>
                             <th>Monto (UVA)</th>
-                            <th>Tasa</th>
-                            <th>Plazo</th>
+                            <th>Tasa (%)</th>
+                            <th>Plazo (Años)</th>
                         </tr>
                     </thead>
                     <tbody>
                         
             <tr>
-                <td>01/12/2025</td>
-                <td>$329,269,478</td>
-                <td>195,175</td>
-                <td>5.77%</td>
-                <td>9408</td>
-            </tr>
-            <tr>
-                <td>01/11/2025</td>
-                <td>$261,595,908</td>
-                <td>158,666</td>
-                <td>5.90%</td>
-                <td>9215</td>
-            </tr>
-            <tr>
-                <td>01/10/2025</td>
-                <td>$533,661,726</td>
-                <td>330,352</td>
-                <td>6.14%</td>
-                <td>9161</td>
-            </tr>
-            <tr>
-                <td>01/09/2025</td>
-                <td>$494,128,102</td>
-                <td>311,809</td>
-                <td>6.34%</td>
-                <td>8902</td>
-            </tr>
-            <tr>
-                <td>01/08/2025</td>
-                <td>$410,728,302</td>
-                <td>263,947</td>
-                <td>6.32%</td>
-                <td>8804</td>
-            </tr>
-            <tr>
-                <td>01/07/2025</td>
-                <td>$403,685,305</td>
-                <td>263,634</td>
-                <td>6.17%</td>
-                <td>8855</td>
-            </tr>
-            <tr>
-                <td>01/06/2025</td>
-                <td>$347,537,201</td>
-                <td>230,867</td>
-                <td>6.04%</td>
-                <td>8753</td>
-            </tr>
-            <tr>
-                <td>01/05/2025</td>
-                <td>$349,928,629</td>
-                <td>238,862</td>
-                <td>5.95%</td>
-                <td>8725</td>
-            </tr>
-            <tr>
-                <td>01/04/2025</td>
-                <td>$349,598,839</td>
-                <td>246,879</td>
-                <td>5.80%</td>
-                <td>8708</td>
-            </tr>
-            <tr>
-                <td>01/03/2025</td>
-                <td>$269,605,958</td>
-                <td>195,184</td>
-                <td>5.58%</td>
-                <td>8725</td>
-            </tr>
-            <tr>
-                <td>01/02/2025</td>
-                <td>$241,474,109</td>
-                <td>178,879</td>
-                <td>5.40%</td>
-                <td>8640</td>
-            </tr>
-            <tr>
-                <td>01/01/2025</td>
-                <td>$210,390,626</td>
-                <td>159,757</td>
-                <td>5.22%</td>
-                <td>8603</td>
-            </tr>
-            <tr>
-                <td>01/12/2024</td>
-                <td>$269,185,468</td>
-                <td>209,503</td>
-                <td>5.22%</td>
-                <td>8692</td>
-            </tr>
-            <tr>
-                <td>01/11/2024</td>
-                <td>$199,094,325</td>
-                <td>159,285</td>
-                <td>5.01%</td>
-                <td>8591</td>
-            </tr>
-            <tr>
-                <td>01/10/2024</td>
-                <td>$207,644,584</td>
-                <td>171,896</td>
-                <td>5.00%</td>
-                <td>8780</td>
-            </tr>
-            <tr>
-                <td>01/09/2024</td>
-                <td>$125,957,499</td>
-                <td>108,575</td>
-                <td>4.83%</td>
-                <td>8933</td>
-            </tr>
-            <tr>
-                <td>01/08/2024</td>
-                <td>$67,754,317</td>
-                <td>60,759</td>
-                <td>4.40%</td>
-                <td>8772</td>
-            </tr>
-            <tr>
-                <td>01/07/2024</td>
-                <td>$21,833,469</td>
-                <td>20,462</td>
-                <td>3.93%</td>
-                <td>7514</td>
+                <td>01/05/2024</td>
+                <td>3,448,574</td>
+                <td>3,677</td>
+                <td>2.65%</td>
+                <td>14.96</td>
             </tr>
             <tr>
                 <td>01/06/2024</td>
-                <td>$6,869,846</td>
+                <td>6,869,846</td>
                 <td>6,756</td>
                 <td>3.27%</td>
-                <td>7498</td>
+                <td>20.54</td>
             </tr>
             <tr>
-                <td>01/05/2024</td>
-                <td>$3,448,574</td>
-                <td>3,677</td>
-                <td>2.65%</td>
-                <td>5462</td>
+                <td>01/07/2024</td>
+                <td>21,833,469</td>
+                <td>20,462</td>
+                <td>3.93%</td>
+                <td>20.59</td>
+            </tr>
+            <tr>
+                <td>01/08/2024</td>
+                <td>67,754,317</td>
+                <td>60,759</td>
+                <td>4.40%</td>
+                <td>24.03</td>
+            </tr>
+            <tr>
+                <td>01/09/2024</td>
+                <td>125,957,499</td>
+                <td>108,575</td>
+                <td>4.83%</td>
+                <td>24.47</td>
+            </tr>
+            <tr>
+                <td>01/10/2024</td>
+                <td>207,644,584</td>
+                <td>171,896</td>
+                <td>5.00%</td>
+                <td>24.05</td>
+            </tr>
+            <tr>
+                <td>01/11/2024</td>
+                <td>199,094,325</td>
+                <td>159,285</td>
+                <td>5.01%</td>
+                <td>23.54</td>
+            </tr>
+            <tr>
+                <td>01/12/2024</td>
+                <td>269,185,468</td>
+                <td>209,503</td>
+                <td>5.22%</td>
+                <td>23.81</td>
+            </tr>
+            <tr>
+                <td>01/01/2025</td>
+                <td>210,390,626</td>
+                <td>159,757</td>
+                <td>5.22%</td>
+                <td>23.57</td>
+            </tr>
+            <tr>
+                <td>01/02/2025</td>
+                <td>241,474,109</td>
+                <td>178,879</td>
+                <td>5.40%</td>
+                <td>23.67</td>
+            </tr>
+            <tr>
+                <td>01/03/2025</td>
+                <td>269,605,958</td>
+                <td>195,184</td>
+                <td>5.58%</td>
+                <td>23.90</td>
+            </tr>
+            <tr>
+                <td>01/04/2025</td>
+                <td>349,598,839</td>
+                <td>246,879</td>
+                <td>5.80%</td>
+                <td>23.86</td>
+            </tr>
+            <tr>
+                <td>01/05/2025</td>
+                <td>349,928,629</td>
+                <td>238,862</td>
+                <td>5.95%</td>
+                <td>23.90</td>
+            </tr>
+            <tr>
+                <td>01/06/2025</td>
+                <td>347,537,201</td>
+                <td>230,867</td>
+                <td>6.04%</td>
+                <td>23.98</td>
+            </tr>
+            <tr>
+                <td>01/07/2025</td>
+                <td>403,685,305</td>
+                <td>263,634</td>
+                <td>6.17%</td>
+                <td>24.26</td>
+            </tr>
+            <tr>
+                <td>01/08/2025</td>
+                <td>410,728,302</td>
+                <td>263,947</td>
+                <td>6.32%</td>
+                <td>24.12</td>
+            </tr>
+            <tr>
+                <td>01/09/2025</td>
+                <td>494,128,102</td>
+                <td>311,809</td>
+                <td>6.34%</td>
+                <td>24.39</td>
+            </tr>
+            <tr>
+                <td>01/10/2025</td>
+                <td>533,661,726</td>
+                <td>330,352</td>
+                <td>6.14%</td>
+                <td>25.10</td>
+            </tr>
+            <tr>
+                <td>01/11/2025</td>
+                <td>261,595,908</td>
+                <td>158,666</td>
+                <td>5.90%</td>
+                <td>25.25</td>
+            </tr>
+            <tr>
+                <td>01/12/2025</td>
+                <td>329,269,478</td>
+                <td>195,175</td>
+                <td>5.77%</td>
+                <td>25.78</td>
             </tr>
                     </tbody>
                 </table>
             </div>
+
+            <script>
+                function exportTableToCSV(filename) {
+                    var csv = [];
+                    var rows = document.querySelectorAll("table tr");
+                    for (var i = 0; i < rows.length; i++) {
+                        var row = [], cols = rows[i].querySelectorAll("td, th");
+                        for (var j = 0; j < cols.length; j++) 
+                            row.push('"' + cols[j].innerText.replace('.', '').replace(',', '.') + '"');
+                        csv.push(row.join(","));
+                    }
+                    var csvFile = new Blob([csv.join("\n")], {type: "text/csv;charset=utf-8;"});
+                    var link = document.createElement("a");
+                    if (link.download !== undefined) {
+                        var url = URL.createObjectURL(csvFile);
+                        link.setAttribute("href", url);
+                        link.setAttribute("download", filename);
+                        link.style.visibility = 'hidden';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }
+                }
+            </script>
         </body>
         </html>
         
